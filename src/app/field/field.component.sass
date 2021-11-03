@@ -1,0 +1,18 @@
+.field
+    height: 25rem
+    width: 25rem
+    border: 3px solid aqua
+    margin-right: 1rem
+    transition: 200ms
+    display: grid
+    grid-template: repeat(20, 1fr) / repeat(20, 1fr)
+    color: #fff
+    &:hover
+        box-shadow: 0px 0px 4px 2px blue
+
+.cell
+    transition: 200ms
+    border: 1px dashed #ccc
+    &:hover
+        box-shadow: 0px 0px 2px 1px #aaa
+        border-style: solid
