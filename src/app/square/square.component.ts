@@ -6,9 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./square.component.sass']
 })
 export class SquareComponent implements OnInit {
+  
+  str: string = '';
+  x: number = 0;
+  y: number = 0;
 
- 
-  constructor() { }
+  getRandomNumber() : number {
+     return Math.floor(Math.random() * 6) + 1
+  }
+
+  rollDice() {
+    this.x = this.getRandomNumber()
+    this.y = this.getRandomNumber()
+  }
+
+  constructor() {
+
+   }
 
   ngOnInit(): void {
   }
